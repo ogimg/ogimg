@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## ogimg
 
-## Getting Started
+Create stunning Open Graph (OG) images for your website. Free, open-source, and built with Next.js.
 
-First, run the development server:
+- **Live site**: `https://ogimg.art`
+- **Repository**: `https://github.com/megh-bari/ogimg`
+
+### Status
+
+- **Landing page**: implemented
+- **Editor** (`/editor`): linked from the UI, but not implemented yet (route is currently missing)
+
+### Features (planned / in progress)
+
+- Real-time preview
+- Multiple templates
+- Custom fonts & colors
+- Export as PNG
+- Responsive design
+- Dark mode support
+
+### Tech stack
+
+- **Next.js** (App Router) + **React**
+- **Tailwind CSS v4**
+- **shadcn/ui** (New York) + **Radix UI**
+- **next-themes** (theme switching) + theme switch animation
+- **Biome** (lint/format)
+
+### Getting started
+
+#### Prerequisites
+
+- **Node.js**: recommended 20+
+- **npm** (this repo includes `package-lock.json`)
+
+#### Install
+
+```bash
+npm install
+```
+
+#### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# dev server
+npm run dev
 
-## Learn More
+# production build + start
+npm run build
+npm run start
 
-To learn more about Next.js, take a look at the following resources:
+# lint/format (Biome)
+npm run lint
+npm run lint:fix
+npm run format
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/`: Next.js routes, layout, and global styles
+- `components/`: UI + page/landing components
+- `constants/site.ts`: site URLs, social links, and feature list
+- `app/metadata.ts`: SEO/OpenGraph/Twitter metadata
+- `lib/`: shared utilities and font config
 
-## Deploy on Vercel
+### Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is a standard Next.js app and deploys cleanly on **Vercel**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Build command: `npm run build`
+- Output: Next.js default
+
+### Contributing
+
+- Open an issue or PR on `https://github.com/megh-bari/ogimg`
+- Please run `npm run lint` before submitting changes
+
+### License
+
+No license file is currently present in this repository (add a `LICENSE` file to make licensing explicit).
