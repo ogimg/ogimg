@@ -1,15 +1,10 @@
 import { ArrowLeft, Home } from 'lucide-react'
 import Link from 'next/link'
-import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Button } from '@/components/ui/button'
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white dark:bg-black relative">
-      {/* Theme Toggle in top right */}
-      {/* <div className="absolute top-6 right-6">
-        <ThemeToggle />
-      </div> */}
 
       <div className="text-center px-4 max-w-2xl">
         {/* 404 */}

@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from 'next/font/google'
 import { baseMetaData } from '@/app/metadata'
 import { ThemeProvider } from '@/components/provider/theme-provider'
 import { defaultFont } from '@/lib/font-config'

@@ -1,52 +1,50 @@
-import { ArrowRight, Github, Twitter } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 
 function Navbar() {
   return (
-    <>
-      <nav className="fixed top-4 inset-x-0 z-50 flex justify-center px-4 pointer-events-none">
-        <div className="pointer-events-auto w-full max-w-2xl">
-          <div
-            className="mx-auto flex items-center justify-between
+    <nav className="fixed top-4 inset-x-0 z-50 flex justify-center px-4 pointer-events-none">
+      <div className="pointer-events-auto w-full max-w-2xl">
+        <div
+          className="mx-auto flex items-center justify-between
       bg-bg-900/80 backdrop-blur-xl
       border border-border-base
-      rounded-full px-6 py-1
+       rounded-2xl px-6 py-1
       shadow-2xl shadow-black/10 dark:shadow-black/50"
-          >
-            {/* Left: Logo */}
-            <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/logo.svg"
-                alt="ogimg Logo"
-                className="invert dark:invert-0"
-                width={50}
-                height={50}
-              />
-              <span className="text-xl -ml-4 font-medium hidden md:block">
-                ogimg
-              </span>
-            </Link>
+        >
+          {/* Left: Logo */}
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo.svg"
+              alt="ogimg Logo"
+              className="invert dark:invert-0"
+              width={50}
+              height={50}
+            />
+            <span className="text-xl -ml-4 font-medium">
+              ogimg
+            </span>
+          </Link>
 
-            {/* Right: Actions */}
-            <div className="flex items-center gap-1">
-              <ThemeToggle />
+          {/* Right: Actions */}
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
 
-              <Link
-                href="/editor"
-                className="ml-2 flex items-center gap-2 px-5 py-2
+            <Link
+              href="/editor"
+              className="ml-2 flex items-center gap-2 px-5 py-2
             bg-black text-white dark:bg-white dark:text-black rounded-full
             text-xs font-bold hover:opacity-90 transition-opacity"
-              >
-                Open Editor <ArrowRight size={14} />
-              </Link>
-            </div>
+            >
+              Open Editor <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   )
 }
 
