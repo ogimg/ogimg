@@ -44,7 +44,7 @@ export default function HeroSection() {
                         </Button>
 
                         <a
-                            href="https://github.com"
+                            href="https://github.com/ogimg/ogimg"
                             target="_blank"
                             rel="noreferrer"
                             className="h-12 px-8 rounded-full bg-background backdrop-blur-md border font-medium flex items-center gap-2 hover:bg-muted transition-all"

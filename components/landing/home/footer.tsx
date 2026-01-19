@@ -5,13 +5,13 @@ import { RiTwitterXLine } from 'react-icons/ri'
 const SOCIALS = [
   {
     label: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/ogimg/ogimg',
     icon: <Github size={20} />,
     ariaLabel: 'ogimg on GitHub',
   },
   {
     label: 'Twitter/X',
-    href: 'https://twitter.com/ogimgai',
+    href: 'https://x.com/ogimg_art',
     icon: <RiTwitterXLine size={20} />,
     ariaLabel: 'ogimg on Twitter',
   },
