@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button'
 
 export default function HeroSection() {
     return (
-        <section className="relative z-10">
-            <div className="container py-20">
+        <section className="relative z-10 w-full">
+            <div className="container mx-auto p-2 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
                     <Link
                         href="#link"
@@ -21,7 +21,7 @@ export default function HeroSection() {
                     </Link>
 
                     <div className="mx-auto max-w-3xl">
-                        <h1 className="text-foreground mb-4 text-balance text-5xl font-medium tracking-tight md:text-7xl">
+                        <h1 className="text-foreground mb-4 text-balance text-5xl font-bold tracking-tight md:text-7xl">
                             Create excellent Open Graph Images
                         </h1>
                         <p className="text-muted-foreground mx-auto max-w-2xl text-pretty leading-relaxed md:text-lg">

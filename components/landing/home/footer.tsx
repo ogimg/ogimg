@@ -19,10 +19,9 @@ const SOCIALS = [
 
 function Footer() {
   return (
-    <section className="relative z-10">
-      <div className="container">
-        <footer className="w-full border-t border-border-base bg-bg-900/50 px-4 pb-6 pt-12 sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-5xl flex-col gap-6">
+    <footer className="relative z-10 w-full border-t border-dashed border-white/20 dark:border-white/10">
+      <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-12 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-5xl flex-col gap-6">
             {/* Brand + Description */}
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
               <div className="flex flex-col items-start gap-4">
@@ -68,7 +67,7 @@ function Footer() {
               </nav>
             </div>
 
-            <div className="flex flex-col items-center justify-between gap-4 border-t border-border-base pt-8 text-xs text-zinc-500 dark:text-zinc-400 sm:flex-row">
+            <div className="flex flex-col items-center justify-between gap-4 border-t border-white/20 dark:border-white/10 pt-8 text-xs text-zinc-500 dark:text-zinc-400 sm:flex-row">
               {/* Copyright */}
               <div className="flex items-center gap-2 sm:gap-1">
                 <span>
@@ -97,10 +96,9 @@ function Footer() {
                 </a>
               </div>
             </div>
-          </div>
-        </footer>
+        </div>
       </div>
-    </section>
+    </footer>
   )
 }
 

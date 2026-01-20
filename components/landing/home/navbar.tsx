@@ -10,8 +10,8 @@ function Navbar() {
       <div className="pointer-events-auto w-full max-w-2xl">
         <div
           className="mx-auto flex items-center justify-between
-      bg-bg-900/80 backdrop-blur-xl
-      border border-border-base
+     backdrop-blur-xl
+      border border-white/20 dark:border-white/10
        rounded-2xl px-6 py-1
       shadow-2xl shadow-black/10 dark:shadow-black/50"
         >
