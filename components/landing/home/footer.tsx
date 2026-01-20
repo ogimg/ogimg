@@ -19,7 +19,7 @@ const SOCIALS = [
 
 function Footer() {
   return (
-    <footer className="relative z-10 w-full border-t border-dashed border-white/20 dark:border-white/10">
+    <footer className="relative z-10 w-full border-t border-dashed border-black/20 dark:border-white/10">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-12 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-5xl flex-col gap-6">
             {/* Brand + Description */}
@@ -67,7 +67,7 @@ function Footer() {
               </nav>
             </div>
 
-            <div className="flex flex-col items-center justify-between gap-4 border-t border-white/20 dark:border-white/10 pt-8 text-xs text-zinc-500 dark:text-zinc-400 sm:flex-row">
+            <div className="flex flex-col items-center justify-between gap-4 border-t border-black/20 dark:border-white/10 pt-8 text-xs text-zinc-500 dark:text-zinc-400 sm:flex-row">
               {/* Copyright */}
               <div className="flex items-center gap-2 sm:gap-1">
                 <span>
