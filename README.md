@@ -82,8 +82,9 @@ This project is a standard Next.js app and deploys cleanly on **Vercel**:
 ### Contributing
 
 - Open an issue or PR on `https://github.com/megh-bari/ogimg`
+- Please read `CONTRIBUTING.md` and follow `CODE_OF_CONDUCT.md`
 - Please run `npm run lint` before submitting changes
 
 ### License
 
-No license file is currently present in this repository (add a `LICENSE` file to make licensing explicit).
+Licensed under the **Apache License 2.0**. See `LICENSE`.

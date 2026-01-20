@@ -109,6 +109,6 @@ export const baseMetaData: Metadata = {
     'revisit-after': '7 days',
     distribution: 'global',
     rating: 'general',
-    copyright: `© 2026 ${SOCIAL_LINKS.author.name}. All rights reserved.`,
+    copyright: `© 2026 ${SOCIAL_LINKS.author.name}.`,
   },
 }
