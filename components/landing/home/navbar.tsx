@@ -16,7 +16,14 @@ function Navbar() {
       shadow-2xl shadow-black/10 dark:shadow-black/50"
         >
           {/* Left: Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link 
+            href="/" 
+            className="flex items-center gap-3"
+            onClick={(e) => {
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
+          >
             <Image
               src="/logo.svg"
               alt="ogimg Logo"
