@@ -1,5 +1,9 @@
+'use client'
+
+import { TextScramble } from '@/components/motion-primitives/text-scramble'
 import { Github } from 'lucide-react'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import { RiTwitterXLine } from 'react-icons/ri'
 
 const SOCIALS = [
@@ -18,6 +22,22 @@ const SOCIALS = [
 ]
 
 function Footer() {
+  const [isTrigger, setIsTrigger] = useState(false)
+
+  useEffect(() => {
+    // Auto-scramble periodically (no hover required)
+    const start = () => setIsTrigger(true)
+
+    // Start once shortly after mount, then repeat
+    const initial = setTimeout(start, 300)
+    const interval = setInterval(start, 3500)
+
+    return () => {
+      clearTimeout(initial)
+      clearInterval(interval)
+    }
+  }, [])
+
   return (
     <footer className="relative z-10 w-full border-t border-dashed border-black/20 dark:border-white/10">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-12 sm:px-6 lg:px-8">
@@ -83,16 +103,24 @@ function Footer() {
               </div>
 
               {/* Author Credit */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <span>Made by</span>
                 <a
                   href="https://megh.me"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 font-medium text-text-main transition-colors hover:underline"
+                  className="flex items-center  font-medium text-text-main transition-colors hover:underline"
                   aria-label="Megh's website"
                 >
-                  <span>Megh</span>
+                  <TextScramble
+                    as="span"
+                    className="inline-block w-[4ch] whitespace-nowrap"
+                    speed={0.02}
+                    trigger={isTrigger}
+                    onScrambleComplete={() => setIsTrigger(false)}
+                  >
+                    Megh
+                  </TextScramble>
                 </a>
               </div>
             </div>

@@ -13,12 +13,15 @@ export default function HeroSection() {
             <div className="container mx-auto p-2 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
+                        initial={{ opacity: 0, y: -14, scale: 0.98, filter: 'blur(10px)' }}
+                        animate={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
+                        transition={{ type: 'spring', stiffness: 320, damping: 26, delay: 0.1 }}
+                        whileTap={{ scale: 0.98 }}
                     >
                         <Link
                             href="https://github.com/ogimg/ogimg"
+                            target="_blank"
+                            rel="noreferrer"
                             className="bg-background group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md transition-colors duration-300 hover:bg-muted dark:border-t-white/5 dark:hover:border-t-border"
                         >
                             <span className="text-foreground text-sm font-medium">
