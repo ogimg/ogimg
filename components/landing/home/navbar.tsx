@@ -1,10 +1,15 @@
+'use client'
+
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 
 function Navbar() {
+  const pathname = usePathname()
+
   return (
     <nav className="fixed top-4 inset-x-0 z-50 flex justify-center px-4 pointer-events-none">
       <div className="pointer-events-auto w-full max-w-2xl">
@@ -20,8 +25,10 @@ function Navbar() {
             href="/"
             className="flex items-center gap-3"
             onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: 'smooth' })
+              if (pathname === '/') {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }
             }}
           >
             <Image
