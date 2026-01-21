@@ -18,7 +18,7 @@ export const SITE_INFO = {
 } as const
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/megh-bari/ogimg',
+  github: 'https://github.com/ogimg/ogimg',
   twitter: 'https://twitter.com/meghtrix',
   author: {
     name: 'Megh Bari',

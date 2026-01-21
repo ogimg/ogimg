@@ -7,7 +7,6 @@ export default function Home() {
     <div className="min-h-screen w-full bg-white font-sans dark:bg-black">
       {/* landing page compoment */}
       <LandingPage />
-      
     </div>
   )
 }

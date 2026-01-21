@@ -1,7 +1,11 @@
-import Navbar from '../landing/home/navbar'
+import LightRays from '@/components/background/light-ray'
+import CTAEditorSection from '../landing/cta-editor'
+import FAQSection from '../landing/faq'
+import FeaturesSection from '../landing/features'
 import HeroSection from '../landing/hero'
 import Footer from '../landing/home/footer'
-import LightRays from '@/components/background/light-ray'
+import Navbar from '../landing/home/navbar'
+import SponsorsSection from '../landing/sponsors'
 
 function LandingPage() {
   return (
@@ -12,9 +16,13 @@ function LandingPage() {
         followMouse
       />
       <Navbar />
-      <main className="flex min-h-screen w-full items-center justify-center pt-24 pb-24">
+      <main className="flex min-h-screen w-full items-center justify-center pt-24">
         <HeroSection />
       </main>
+      <FeaturesSection />
+      <SponsorsSection />
+      <CTAEditorSection />
+      <FAQSection />
       <Footer />
     </div>
   )

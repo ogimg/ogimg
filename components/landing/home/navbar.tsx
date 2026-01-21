@@ -16,8 +16,8 @@ function Navbar() {
       shadow-2xl shadow-black/10 dark:shadow-black/50"
         >
           {/* Left: Logo */}
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center gap-3"
             onClick={(e) => {
               e.preventDefault()
@@ -31,9 +31,7 @@ function Navbar() {
               width={50}
               height={50}
             />
-            <span className="text-xl -ml-4 font-medium">
-              ogimg
-            </span>
+            <span className="text-xl -ml-4 font-medium">ogimg</span>
           </Link>
 
           {/* Right: Actions */}
