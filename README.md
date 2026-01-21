@@ -30,7 +30,7 @@
 ![UI Image](./public/snapshots/readme-5.png)
 ![UI Image](./public/snapshots/readme-6.png)
 
-> _**Status:** Landing page is live. The editor route (`/editor`) is linked in the UI, but not implemented yet (route is currently missing)._
+> _**Status:** Landing page is live. The editor route (`/editor`) is linked in the UI, but not implemented yet (cooking)._
 
 ## Features
 
@@ -148,7 +148,7 @@ For questions, issues, or suggestions:
 ## Built By
 
 - Twitter(X): [@meghtrix](https://x.com/meghtrix)
-- Alternate Twitter(X): [@usepatterncraft](https://x.com/usepatterncraft)
+- Alternate Twitter(X): [@ogimg_art](https://x.com/ogimg_art)
 - GitHub: [@megh-bari](https://github.com/megh-bari)
 
 If you like this project, consider giving it a ⭐️ on GitHub and sharing it with others!
