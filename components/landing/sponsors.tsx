@@ -46,13 +46,13 @@ export default function SponsorsSection() {
   }
 
   return (
-    <section className="py-16 border-y border-dashed border-black/20 dark:border-white/10">
+    <section className="py-16 border-y border-dashed border-black/10 dark:border-white/10">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-bold text-center mb-8 text-balance">
           Become Sponsors
         </h2>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-dashed divide-black/20 dark:divide-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-dashed divide-black/10 dark:divide-white/10">
             {sponsors.map((sponsor) => (
               <SponsorItem
                 key={sponsor.id}
@@ -62,9 +62,13 @@ export default function SponsorsSection() {
             ))}
           </div>
         </div>
-
+        {/* bottom border */}
+        <div className="border-b border-dashed border-black/20 dark:border-white/10 my-6 mx-auto max-w-xl w-full"></div>
         {/* Sponsor Buttons */}
-        <div className="flex flex-col items-center gap-6 mt-12">
+        <div className="flex flex-col items-center gap-6">
+          <h2 className="text-2xl font-bold text-center text-balance">
+            Support the Project
+          </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild variant="outline" className="gap-2">
               <Link href={SPONSORS_LINKS.github} target="_blank">

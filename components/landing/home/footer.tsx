@@ -94,7 +94,7 @@ function Footer() {
                 © {new Date().getFullYear()}{' '}
                 <a
                   href="https://ogimg.art"
-                  className="text-text-main transition-colors hover:text-blue-500 hover:underline underline-offset-2"
+                  className="text-text-main transition-colors hover:text-foreground underline underline-offset-4"
                 >
                   OG Img
                 </a>
@@ -104,12 +104,12 @@ function Footer() {
 
             {/* Author Credit */}
             <div className="flex items-center gap-1.5">
-              <span>Made by</span>
+              <span>Built by</span>
               <a
                 href="https://megh.me"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center  font-medium text-text-main transition-colors hover:underline"
+                className="flex items-center font-medium text-text-main transition-color underline underline-offset-4"
                 aria-label="Megh's website"
               >
                 <TextScramble

@@ -1,7 +1,7 @@
+import { Analytics } from '@vercel/analytics/next'
 import { baseMetaData } from '@/app/metadata'
 import { ThemeProvider } from '@/components/provider/theme-provider'
 import { defaultFont } from '@/lib/font-config'
-import { Analytics } from "@vercel/analytics/next"
 
 import './globals.css'
 
@@ -22,7 +22,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-           <Analytics />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

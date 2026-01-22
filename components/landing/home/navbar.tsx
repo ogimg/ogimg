@@ -16,7 +16,7 @@ function Navbar() {
         <div
           className="mx-auto flex items-center justify-between
      backdrop-blur-xl
-      border border-white/20 dark:border-white/10
+      border border-white/10 dark:border-white/10
        rounded-2xl px-6 py-1
       shadow-2xl shadow-black/10 dark:shadow-black/50"
         >
