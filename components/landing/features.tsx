@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { Settings2, Sparkles, Zap } from 'lucide-react'
+import { Github, Settings2, Zap } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import CardDecorator from '@/components/ui/custom/card-decorator'
 
@@ -12,29 +12,29 @@ const features: {
   {
     id: 'preview',
     icon: Zap,
-    title: 'Real-time Preview',
+    title: 'Instant Preview',
     description:
-      'See your changes instantly as you design. Export as PNG when ready.',
+      'Visualize changes instantly. Create and export your perfect image in real-time.',
   },
   {
     id: 'customizable',
     icon: Settings2,
     title: 'Fully Customizable',
     description:
-      'Choose from multiple templates. Customize fonts, colors, and layouts to match your brand.',
+      'Use templates or build from scratch. Customize every detail to match your brand.',
   },
   {
-    id: 'modern',
-    icon: Sparkles,
-    title: 'Built with Modern Tools',
+    id: 'open-source',
+    icon: Github,
+    title: '100% Free & Open Source',
     description:
-      'Powered by Next.js, Tailwind CSS, and Vercel. Open-source and free to use.',
+      'Completely free with no hidden fees. Open source and yours to use forever.',
   },
 ]
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 md:py-32 border-b border-dashed border-black/20 dark:border-white/10">
+    <section className="py-16 md:py-32 border-b border-dashed border-black/10 dark:border-white/10">
       <div className="@container mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-black dark:text-white text-4xl font-semibold lg:text-5xl">

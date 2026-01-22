@@ -9,7 +9,7 @@ import BlurText from '@/components/ui/react-bits/blur-text'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 export default function HeroSection() {
   return (
-    <section className="relative z-10 w-full border-b border-dashed border-black/20 dark:border-white/10">
+    <section className="relative z-10 w-full border-b border-dashed border-black/10 dark:border-white/10">
       <div className="container mx-auto p-2 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
           <motion.div
