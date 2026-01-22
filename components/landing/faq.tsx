@@ -76,7 +76,6 @@ export default function FAQSection() {
         <Accordion
           className="-space-y-px w-full rounded-lg border border-dashed border-black/10 dark:border-white/10 bg-card/50"
           collapsible
-          defaultValue="item-1"
           type="single"
         >
           {questions.map((item) => (

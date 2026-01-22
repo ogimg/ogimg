@@ -109,7 +109,7 @@ function Footer() {
                 href="https://megh.me"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center font-medium text-text-main transition-color underline underline-offset-4"
+                className="flex items-center font-medium text-text-main transition-color underline underline-offset-4 hover:text-foreground transition-colors"
                 aria-label="Megh's website"
               >
                 <TextScramble
