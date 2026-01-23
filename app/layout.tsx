@@ -14,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${defaultFont.className} font-sans antialiased`}>
+      <head>
+      <meta name="google-site-verification" content="w5pqIYKefSkNkCrhe5WoKX1BPM25ULWZ7l-te8OCrTo" />
+      </head>
+      <body
+        className={`${defaultFont.className} font-sans custom_scrollbar antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
