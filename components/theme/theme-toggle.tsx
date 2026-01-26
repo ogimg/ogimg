@@ -8,7 +8,7 @@ import {
 } from 'react-theme-switch-animation'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-
+import { useRef, useEffect } from 'react';
 interface ThemeToggleProps {
   className?: string
 }
@@ -21,6 +21,42 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     onDarkModeChange: (nextIsDark) => setTheme(nextIsDark ? 'dark' : 'light'),
   })
 
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Preload audio on component mount
+  useEffect(() => {
+    audioRef.current = new Audio("/sounds/theme-toggle.mp3");
+    audioRef.current.volume = 0.4;
+    audioRef.current.preload = 'auto';
+    
+    // Load the audio
+    audioRef.current.load();
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  const playSound = () => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio("/sounds/theme-toggle.mp3");
+    }
+
+    audioRef.current.currentTime = 0;
+    audioRef.current.play().catch((error) => {
+      console.warn('Failed to play audio:', error);
+    });
+  };
+
+
+  const handleToggle = () => {
+    playSound();
+    toggleSwitchTheme();
+  };
+
   return (
     <Button
       variant="ghost"
@@ -30,7 +66,10 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
         'relative rounded-full border border-transparent p-2 text-muted-foreground transition-all duration-200 hover:bg-accent hover:text-accent-foreground hover:shadow-sm',
         className,
       )}
-      onClick={toggleSwitchTheme}
+      onClick={() => {
+
+        handleToggle();
+      }}
     >
       {isDarkMode ? <Moon size={18} /> : <Sun size={18} />}
     </Button>
